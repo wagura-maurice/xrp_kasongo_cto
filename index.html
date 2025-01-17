@@ -1,82 +1,487 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XRP Kasongo CTO</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-900 text-white">
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 bg-gray-800 z-10">
-        <div class="container mx-auto flex justify-between items-center p-4">
-            <div class="text-xl font-bold">XRP Kasongo CTO</div>
-            <ul class="flex space-x-4">
-                <li><a href="#home" class="hover:text-gray-400">Home</a></li>
-                <li><a href="#about" class="hover:text-gray-400">About</a></li>
-                <li><a href="#community" class="hover:text-gray-400">Community</a></li>
-                <li><a href="#token" class="hover:text-gray-400">Token</a></li>
-                <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+  <head>
+    <title>Kasongo Coin - Tailwind CSS Template</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  </head>
+
+  <body class="font-sans">
+    <!-- Header Section -->
+    <header
+      class="bg-white shadow fixed w-full top-0 z-50 transition-all duration-300"
+    >
+      <nav
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <a class="navbar-brand p-0" href="#">
+          <img src="assets/images/logo.png" alt="logo" class="h-12" />
+        </a>
+        <button
+          class="lg:hidden p-2 focus:outline-none"
+          type="button"
+          aria-label="Toggle navigation"
+        >
+          <span
+            class="toggle-menu-icon block w-6 h-1 bg-black mb-1 transition-transform duration-300"
+          ></span>
+          <span
+            class="toggle-menu-icon block w-6 h-1 bg-black mb-1 transition-transform duration-300"
+          ></span>
+          <span
+            class="toggle-menu-icon block w-6 h-1 bg-black transition-transform duration-300"
+          ></span>
+        </button>
+        <div class="hidden lg:flex lg:items-center lg:w-auto" id="navbar-right">
+          <ul class="flex flex-col lg:flex-row lg:space-x-8">
+            <li class="nav-item">
+              <a class="nav-link hover:text-gray-600" href="#aboutUs"
+                >ABOUT US</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover:text-gray-600" href="#feature"
+                >Features</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover:text-gray-600" href="#partner"
+                >Partners</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover:text-gray-600" href="#roadmap"
+                >Road map</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover:text-gray-600" href="#buying"
+                >How to buy</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover:text-gray-600" href="#ecosystem"
+                >Ecosystem</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section class="hero-banner bg-gray-100 py-20 mt-16" id="home">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2 text-center lg:text-left">
+            <h5 class="text-lg font-semibold mb-4">
+              Contract Address : 0xaa078...e4964
+            </h5>
+            <h1 class="text-5xl font-bold mb-6">
+              LET'$ MAKE MEMES GREAT AGAIN
+            </h1>
+            <p class="text-lg mb-8">
+              KASONGO COIN is a community-made and owned Cryptocurrency project.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+              <button
+                class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600"
+              >
+                Buy Now
+              </button>
+              <button
+                class="bg-gray-800 text-white px-6 py-2 rounded-lg hover:bg-gray-900"
+              >
+                Join Telegram
+              </button>
+            </div>
+          </div>
+          <div class="lg:w-1/2 mt-10 lg:mt-0">
+            <img
+              src="assets/images/trump-1.png"
+              alt="Kasongo Coin"
+              class="w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us-banner bg-white py-20" id="aboutUs">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2 mb-10 lg:mb-0">
+            <img
+              src="assets/images/trump-2.png"
+              alt="About Kasongo Coin"
+              class="w-full"
+            />
+          </div>
+          <div class="lg:w-1/2 text-center lg:text-left">
+            <h2 class="text-4xl font-bold mb-6">About Us</h2>
+            <p class="text-lg mb-4">
+              First of all, let’s talk about taxes. Zero, nada, zilch. That’s
+              right, there are NO TAXES on buying or selling the KASONGO ERC20
+              token. You know who loves that? Everyone. Because nobody likes
+              taxes.
+            </p>
+            <p class="text-lg mb-4">
+              And let me tell you, we’re not stopping there. We renounced the
+              token at launch and burned the liquidity tokens, so you know it’s
+              the real deal. We’re not messing around here, folks.
+            </p>
+            <p class="text-lg mb-6">
+              Now, some people might try to tell you that this token was stealth
+              launched. And you know what I say to that? Fake news. We didn’t
+              need to stealth launch this token because everyone already knows
+              it’s the best.
+            </p>
+            <button
+              class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600"
+            >
+              Contract Address : 0xaa078...e4964
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-banner bg-gray-100 py-20" id="feature">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2 text-center lg:text-left">
+            <h2 class="text-4xl font-bold mb-6">Features</h2>
+            <p class="text-lg mb-8">
+              Now, let me tell you the truth about this token. It’s entirely
+              worthless, and that’s a fact. We’re not even trying to pretend
+              that this is a serious investment opportunity.
+            </p>
+            <div class="space-y-6">
+              <div class="flex items-center gap-4">
+                <i class="fas fa-shopping-cart text-3xl text-blue-500"></i>
+                <div>
+                  <h5 class="text-xl font-semibold">Buy</h5>
+                  <p class="text-lg">
+                    Kasongo Coin Team has proven experience delivering safe
+                    crypto projects with the marketing connections that can
+                    rocket us to the moon.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <i class="fas fa-coins text-3xl text-blue-500"></i>
+                <div>
+                  <h5 class="text-xl font-semibold">Staking</h5>
+                  <p class="text-lg">
+                    Kasongo Coin Team has proven experience delivering safe
+                    crypto projects with the marketing connections that can
+                    rocket us to the moon.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <i class="fas fa-image text-3xl text-blue-500"></i>
+                <div>
+                  <h5 class="text-xl font-semibold">NFTs</h5>
+                  <p class="text-lg">
+                    Kasongo Coin Team has proven experience delivering safe
+                    crypto projects with the marketing connections that can
+                    rocket us to the moon.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <i class="fab fa-youtube text-3xl text-blue-500"></i>
+                <div>
+                  <h5 class="text-xl font-semibold">YouTube</h5>
+                  <p class="text-lg">
+                    Kasongo Coin Team has proven experience delivering safe
+                    crypto projects with the marketing connections that can
+                    rocket us to the moon.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/2 mt-10 lg:mt-0">
+            <img
+              src="assets/images/trump-3.png"
+              alt="Features"
+              class="w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="community-banner bg-white py-20" id="partner">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="community-card">
+            <img
+              src="assets/images/community-1.png"
+              alt="Partner 1"
+              class="w-full"
+            />
+          </div>
+          <div class="community-card">
+            <img
+              src="assets/images/community-2.png"
+              alt="Partner 2"
+              class="w-full"
+            />
+          </div>
+          <div class="community-card">
+            <img
+              src="assets/images/community-3.png"
+              alt="Partner 3"
+              class="w-full"
+            />
+          </div>
+          <div class="community-card">
+            <img
+              src="assets/images/community-4.png"
+              alt="Partner 4"
+              class="w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="roadmap-section bg-gray-100 py-20" id="roadmap">
+      <div class="container mx-auto px-4">
+        <div class="text-center lg:text-left">
+          <h2 class="text-4xl font-bold">The Meme</h2>
+          <h2 class="text-4xl font-bold">Kasongo Roadmap</h2>
+        </div>
+        <div class="flex flex-col lg:flex-row items-center mt-10">
+          <div class="lg:w-1/2">
+            <ul class="space-y-4">
+              <li class="flex justify-between items-center py-3">
+                <h5 class="text-xl font-semibold">Phase 1</h5>
+                <i class="fas fa-check-circle text-2xl text-blue-500"></i>
+              </li>
+              <li class="flex justify-between items-center py-3">
+                <h5 class="text-xl font-semibold">Phase 2</h5>
+                <i class="fas fa-check-circle text-2xl text-blue-500"></i>
+              </li>
+              <li class="flex justify-between items-center py-3">
+                <h5 class="text-xl font-semibold">Phase 3</h5>
+                <i class="fas fa-check-circle text-2xl text-blue-500"></i>
+              </li>
+              <li class="flex justify-between items-center py-3">
+                <h5 class="text-xl font-semibold">Phase 4</h5>
+                <i class="fas fa-check-circle text-2xl text-blue-500"></i>
+              </li>
             </ul>
+          </div>
+          <div class="lg:w-1/2 mt-10 lg:mt-0">
+            <ul class="space-y-4">
+              <div class="text-xl font-semibold mb-4">Phase 1</div>
+              <li>Build websites</li>
+              <li>Build Social (Telegram, X, Channel)</li>
+              <li>Build Dapp & INO Kasongo Coin</li>
+              <li>Audit Smart Contract</li>
+              <li>Presale on PinkSale</li>
+            </ul>
+          </div>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="h-screen flex items-center justify-center bg-gray-900">
-        <div class="text-center">
-            <h1 class="text-5xl font-bold mb-4">Welcome to XRP Kasongo CTO</h1>
-            <p class="text-xl mb-8">Community-driven movement on the XRP Ledger</p>
-            <a href="#about" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                Learn More
-            </a>
-        </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">About Us</h2>
-            <p class="text-center max-w-2xl mx-auto">
-                We are a community-driven movement on the XRP Ledger. Join us and let's bring back the glory to XRP.
+    <!-- How to Buy Section -->
+    <section class="how-to-buy-section bg-white py-20" id="buying">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2">
+            <img
+              src="assets/images/trump-4.png"
+              alt="How to Buy"
+              class="w-full"
+            />
+          </div>
+          <div class="lg:w-1/2 text-center lg:text-left">
+            <h2 class="text-4xl font-bold mb-6">How to Buy</h2>
+            <p class="text-lg mb-4">The Kasongo token is easy to buy.</p>
+            <p class="text-lg mb-6">
+              We've created YouTube tutorials to show you how to buy Kasongo on
+              Pancakeswap, but we are also available on several great crypto
+              exchanges!
             </p>
+            <h6 class="text-lg font-semibold mb-4">
+              6% Buy or % Sell Slippage for PancakeSwap.
+            </h6>
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <i class="fas fa-wallet text-2xl text-blue-500"></i>
+                <p class="text-lg">Buy with Trust wallet (Video)</p>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fas fa-wallet text-2xl text-blue-500"></i>
+                <p class="text-lg">Buy with Metamask (Video)</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-4 mt-6">
+              <button
+                class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600"
+              >
+                Buy PancakeSwap
+              </button>
+              <button
+                class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600"
+              >
+                Buy Gate.io
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Community Section -->
-    <section id="community" class="py-20 bg-gray-900">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Our Community</h2>
-            <p class="text-center max-w-2xl mx-auto">
-                Join our community and be part of the movement. Together, we can achieve great things.
+    <!-- Ecosystem Section -->
+    <section class="eco-system-section bg-gray-100 py-20" id="ecosystem">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2 text-center lg:text-left">
+            <h2 class="text-4xl font-bold mb-6">Big Frog Ecosystem</h2>
+            <p class="text-lg mb-6">
+              Pepefine is a Pepe theme meme coin designed to offer the benefits
+              that other meme coins don’t give to its community.
             </p>
+            <div class="flex flex-wrap gap-4">
+              <div class="bg-blue-500 text-white px-4 py-2 rounded-lg">
+                NFTs
+              </div>
+              <div class="bg-blue-500 text-white px-4 py-2 rounded-lg">
+                Gaming
+              </div>
+              <div class="bg-blue-500 text-white px-4 py-2 rounded-lg">
+                Decentralized Finance
+              </div>
+              <div class="bg-blue-500 text-white px-4 py-2 rounded-lg">
+                Governance
+              </div>
+              <div class="bg-blue-500 text-white px-4 py-2 rounded-lg">
+                Blockchain
+              </div>
+              <div class="bg-blue-500 text-white px-4 py-2 rounded-lg">
+                Community
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/2 mt-10 lg:mt-0">
+            <img
+              src="assets/images/trump-5.png"
+              alt="Ecosystem"
+              class="w-full"
+            />
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Token Section -->
-    <section id="token" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Token Information</h2>
-            <p class="text-center max-w-2xl mx-auto">
-                Token Issuer: rGG3wQ4kUzd7Jnmk1n5NWPZjjut62kCBfC
-            </p>
+    <!-- Newsletter Section -->
+    <section class="newsletter-section bg-white py-20">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="lg:w-1/2 text-center lg:text-left">
+            <h2 class="text-4xl font-bold mb-6">Subscribe to our Newsletter</h2>
+          </div>
+          <div class="lg:w-1/2">
+            <div class="flex items-center">
+              <input
+                type="email"
+                class="w-full px-4 py-2 border rounded-l-lg focus:outline-none"
+                placeholder="Enter your email"
+              />
+              <button
+                class="bg-blue-500 text-white px-6 py-2 rounded-r-lg hover:bg-blue-600"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-900">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
-            <p class="text-center max-w-2xl mx-auto">
-                Reach out to us for more information or to join the community.
-            </p>
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-10">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col items-center">
+          <a href="#" class="mb-6">
+            <img
+              src="assets/images/f-logo.png"
+              alt="Footer Logo"
+              class="h-12"
+            />
+          </a>
+          <ul class="flex flex-wrap gap-4 justify-center mb-6">
+            <li><a href="#aboutUs" class="hover:text-gray-400">ABOUT US</a></li>
+            <li><a href="#feature" class="hover:text-gray-400">Features</a></li>
+            <li><a href="#partner" class="hover:text-gray-400">Partners</a></li>
+            <li><a href="#roadmap" class="hover:text-gray-400">Road map</a></li>
+            <li>
+              <a href="#buying" class="hover:text-gray-400">How to buy</a>
+            </li>
+            <li>
+              <a href="#ecosystem" class="hover:text-gray-400">Ecosystem</a>
+            </li>
+          </ul>
+          <ul class="flex gap-4">
+            <li>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-facebook text-2xl"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-instagram text-2xl"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-telegram text-2xl"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-discord text-2xl"></i
+              ></a>
+            </li>
+          </ul>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 py-10">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2023 XRP Kasongo CTO. All rights reserved.</p>
-        </div>
+      </div>
     </footer>
-</body>
+
+    <!-- Include custom.js -->
+    <script src="/assets/js/custom.js"></script>
+  </body>
 </html>
