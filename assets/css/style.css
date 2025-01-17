@@ -1,0 +1,149 @@
+/* assets/css/style.css */
+/* Custom Styles for Kasongo Coin */
+
+/* Global Styles */
+body {
+  font-family: "Quantico", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  transition: all 0.3s ease;
+}
+
+header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Menu Toggle Icon */
+.toggle-menu-icon {
+  transition: transform 0.3s ease;
+}
+
+.toggle-menu-icon.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.toggle-menu-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.toggle-menu-icon.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Navbar Links */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3b82f6; /* Tailwind's blue-500 */
+}
+
+/* Hero Banner */
+.hero-banner {
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+}
+
+/* Feature Cards */
+.feature-card-wrapper {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Roadmap Section */
+.phase-box {
+  border-left: 2px solid #3b82f6; /* Tailwind's blue-500 */
+}
+
+.phase-item {
+  transition: background-color 0.3s ease;
+}
+
+.phase-item:hover {
+  background-color: rgba(
+    59,
+    130,
+    246,
+    0.1
+  ); /* Tailwind's blue-500 with opacity */
+}
+
+/* How to Buy Section */
+.guide-topic {
+  transition: transform 0.3s ease;
+}
+
+.guide-topic:hover {
+  transform: translateX(10px);
+}
+
+/* Ecosystem Section */
+.tag-item {
+  background-color: #3b82f6; /* Tailwind's blue-500 */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.tag-item:hover {
+  background-color: #2563eb; /* Tailwind's blue-600 */
+}
+
+/* Newsletter Section */
+.input-group input {
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #3b82f6; /* Tailwind's blue-500 */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #1f2937; /* Tailwind's gray-800 */
+}
+
+.social-icon {
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  #navbar-right {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  #navbar-right.show {
+    display: block;
+  }
+}
