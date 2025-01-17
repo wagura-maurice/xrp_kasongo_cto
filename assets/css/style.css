@@ -303,7 +303,7 @@ button:focus {
 
 /* Features */
 .features-banner {
-  background-image: url(../images/features-bg.png);
+  /* background-image: url(../images/features-bg.png); */
   background-size: cover;
   background-position: top center;
   padding: 80px 0;
